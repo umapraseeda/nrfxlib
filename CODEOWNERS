@@ -7,7 +7,7 @@
 /CODEOWNERS                               @carlescufi
 /LICENSE                                  @carlescufi
 /Jenkinsfile                              @thst-nordic
-/README.rst                               @carlescufi
+/README.rst                               @carlescufi @nrfconnect/ncs-doc-leads
 /.checkpatch.conf                         @carlescufi
 /.gitattributes                           @thst-nordic
 /.gitlint                                 @thst-nordic
@@ -19,35 +19,47 @@
 Kconfig*                                  @tejlmand
 
 # All documentation related files
-*.rst                                     @b-gent
-doc/*                                     @b-gent
+doc/*                                     @nrfconnect/ncs-doc-leads
 
 # All doc image subfolders
-/mpsl/doc/pic/                            @Avalei
-/nrf_802154/doc/images/                   @Avalei
-/nrf_modem/doc/images/                    @Avalei
-/nrf_rpc/doc/img/                         @Avalei
-/softdevice_controller/doc/pic/           @Avalei
-/zboss/doc/images/                        @Avalei
+/mpsl/doc/pic/                            @nrfconnect/ncs-dragoon-doc
+/nrf_802154/doc/images/                   @nrfconnect/ncs-radio-sw-doc
+/nrf_modem/doc/images/                    @nrfconnect/ncs-modem-doc
+/nrf_rpc/doc/img/                         @nrfconnect/ncs-si-muffin-doc
+/softdevice_controller/doc/pic/           @nrfconnect/ncs-dragoon-doc
+/zboss/doc/images/                        @nrfconnect/ncs-terahertz-doc
 
 # All subfolders
 /.github/                                 @thst-nordic
 /.github/test-spec.yml                    @nrfconnect/ncs-test-leads
 /softdevice_controller/                   @nrfconnect/ncs-dragoon
+/softdevice_controller/**/*.rst           @nrfconnect/ncs-dragoon-doc
 /nrf_modem/                               @rlubos @lemrey
+/nrf_modem/**/*.rst                       @nrfconnect/ncs-modem-doc
 /crypto/                                  @frkv @tejlmand
+/crypto/**/*.rst                          @nrfconnect/ncs-aegir-doc
 /gzll/                                    @leewkb4567
+/gzll/**/*.rst                            @nrfconnect/ncs-si-muffin-doc
 /mpsl/                                    @nrfconnect/ncs-dragoon
+/mpsl/**/*.rst                            @nrfconnect/ncs-dragoon-doc
 /nfc/                                     @anangl @grochu @KAGA164
+/nfc/**/*.rst                             @nrfconnect/ncs-si-muffin-doc
 /nrf_802154/                              @ankuns @piotrkoziar
+/nrf_802154/**/*.rst                      @nrfconnect/ncs-radio-sw-doc
 /nrf_security/                            @frkv @tejlmand
+/nrf_security/**/.rst                     @nrfconnect/ncs-aegir-doc
 /openthread/                              @lmaciejonczyk @edmont @canisLupus1313
 /zboss/                                   @nrfconnect/ncs-zigbee
+/zboss/**/*.rst                           @nrfconnect/ncs-terahertz-doc
 /zephyr/                                  @carlescufi
 /nrf_rpc/                                 @doki-nordic @KAGA164
+/nrf_rpc/**/*.rst                         @nrfconnect/ncs-si-muffin-doc
 /nrf_dm/                                  @Tschet1 @eriksandgren
+/nrf_dm/**/*.rst                          @nrfconnect/ncs-si-muffin-doc
 /lc3/                                     @koffes @alexsven
+/lc3/**/*.rst                             @nrfconnect/ncs-audio-doc
 /nrf_fuel_gauge/                          @nordic-auko @aasinclair
+/nrf_fuel_gauge/**/.rst                   @nrfconnect/ncs-pmic-doc
 /nrf_wifi/                                @krish2718 @sachinthegreen @rado17 @rlubos
 /nrf_wifi/fw_bins/                        @udaynordic @rajb9 @srkanordic
 /nrf_wifi/fw_if/umac_if/inc/fw/           @udaynordic @rajb9 @srkanordic
